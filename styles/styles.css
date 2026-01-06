@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --color-primario: #272727;
+    --color-secundario: #f55ed4;
+    --color-terciario: #FFFFFF;
+
+    --fuente-montserrat: 'Montserrat', sans-serif;
+    --fuente-krona-one: 'Krona One', sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: var(--color-primario);
+    color: var(--color-terciario);
+    box-sizing: border-box;
+}
+
+#strong-titulo {
+    color: var(--color-secundario)
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 4% 15%;
+}
+
+.link-menu {
+    text-decoration: none;
+    color: var(--color-secundario)
+}
+
+header {
+    margin: 3% 0% 0% 15%;
+}
+
+#header-navbar{
+    display: flex;
+    font-size: 1.5rem;
+    font-family: var(--fuente-montserrat);
+    font-weight: 600;
+    gap: 80px;
+}
+
+
+.presentacion {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2.5rem;
+}
+
+.titulo-presentacion {
+    font-size: 2.5rem;
+    font-family: var(--fuente-krona-one);
+    font-weight: 400;
+    font-style: normal;
+}
+
+.parrafo-presentacion{
+    font-size: 1.5rem;
+    font-family: var(--fuente-montserrat);
+    font-weight: 400;
+}
+
+.botones-presentacion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+#imagen-presentacion {
+    width: 35%;
+}
+
+.boton-presentacion {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    text-align: center;
+    padding: 1rem;
+    border: 0.1rem solid var(--color-secundario);
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+    font-family: var(--fuente-montserrat);
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--color-terciario);
+    gap: 0.5rem;
+}
+
+.boton-presentacion:hover {
+    background-color: #494949;
+}
+
+#subtitulo-botones {
+    font-size: 1.5rem;
+    font-family: var(--fuente-krona-one);
+    font-weight: 400;
+    font-style: normal;
+}
+
+.icono {
+    width: 2rem;
+    height: 2rem;
+    margin: 0.5rem;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-secundario);
+    padding: 1.5rem;
+    color: var(--color-primario);
+    font-size: 1.5rem;
+    font-family: var(--fuente-montserrat);
+    font-weight: 400;
+}
