@@ -20,17 +20,6 @@ body {
     box-sizing: border-box;
 }
 
-#strong-titulo {
-    color: var(--color-secundario)
-}
-
-main {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 4% 15%;
-}
-
 .link-menu {
     text-decoration: none;
     color: var(--color-secundario)
@@ -40,12 +29,23 @@ header {
     margin: 3% 0% 0% 15%;
 }
 
-#header-navbar{
+#header-navbar {
     display: flex;
     font-size: 1.5rem;
     font-family: var(--fuente-montserrat);
     font-weight: 600;
     gap: 80px;
+}
+
+#strong-titulo {
+    color: var(--color-secundario)
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 4% 15%;
 }
 
 
@@ -126,4 +126,33 @@ footer {
     font-size: 1.5rem;
     font-family: var(--fuente-montserrat);
     font-weight: 400;
+}
+
+
+@media(max-width: 1200px){
+
+    header {
+            margin:10%;
+        }
+
+    #header-navbar {
+        justify-content: center;
+    }
+
+    main {
+            flex-direction: column-reverse;
+            gap: 2.5rem;
+            padding: 0px 5% 5% 5%;
+            margin: 5%;
+        }
+
+    .presentacion {
+        width: auto;
+    }
+
+    #imagen-presentacion{
+        width: 70%;
+    }
+
+
 }
